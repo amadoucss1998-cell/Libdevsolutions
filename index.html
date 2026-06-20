@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LibDev Solutions — Professional Websites &amp; Mobile Apps</title>
+  <meta name="description" content="LibDev Solutions builds fast, secure and modern websites and mobile apps that build your brand and grow your business. Based in Monrovia, Liberia. We Code. You Grow." />
+  <meta name="keywords" content="web development Liberia, mobile app development, e-commerce, SEO, website redesign, Monrovia web developer" />
+  <meta name="author" content="LibDev Solutions" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="LibDev Solutions — Professional Websites &amp; Mobile Apps" />
+  <meta property="og:description" content="Modern Design. Clean Code. Real Results. We build websites and apps that grow your business." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%A1%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <!-- Animated background canvas -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="brand" aria-label="LibDev Solutions home">
+      <span class="brand-mark">&lt;/&gt;</span>
+      <span class="brand-text">LIB<span>DEV</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#why">Why Me</a>
+      <a href="#work">Process</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn-sm btn-glow nav-cta">Start a Project</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <span class="pill reveal"><span class="dot"></span>Based in Monrovia, Liberia 🇱🇷</span>
+        <h1 class="reveal">
+          Professional Websites &amp; Mobile Apps
+          <span class="grad">That Grow Your Business.</span>
+        </h1>
+        <p class="lead reveal">Modern Design. Clean Code. Real Results. I build fast, secure and modern digital products that turn visitors into customers.</p>
+        <div class="hero-actions reveal">
+          <a href="#contact" class="btn btn-glow">Start Your Project <span class="arrow">→</span></a>
+          <a href="#services" class="btn btn-ghost">View Services</a>
+        </div>
+        <div class="hero-trust reveal">
+          <div class="stat"><strong data-count="100">0</strong><span>% Responsive</span></div>
+          <div class="stat"><strong data-count="24">0</strong><span>/7 Support</span></div>
+          <div class="stat"><strong data-count="6">0</strong><span>Core Services</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="code-card tilt">
+          <div class="code-head">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <em>libdev.js</em>
+          </div>
+          <pre class="code-body"><code><span class="c-key">const</span> <span class="c-var">libdev</span> = {
+  <span class="c-prop">tagline</span>: <span class="c-str">"We Code. You Grow."</span>,
+  <span class="c-prop">builds</span>: [<span class="c-str">"websites"</span>, <span class="c-str">"mobile apps"</span>],
+  <span class="c-prop">delivers</span>: <span class="c-str">"real results"</span>,
+  <span class="c-fn">grow</span>() {
+    <span class="c-key">return</span> <span class="c-str">"your business 🚀"</span>;
+  }
+};</code></pre>
+        </div>
+        <div class="float-chip chip-1">⚡ Fast &amp; Secure</div>
+        <div class="float-chip chip-2">🔍 SEO Friendly</div>
+        <div class="float-chip chip-3">💬 Ongoing Support</div>
+      </div>
+    </div>
+    <a href="#services" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>WEB DEVELOPMENT</span><span>•</span><span>MOBILE APPS</span><span>•</span><span>E-COMMERCE</span><span>•</span><span>SEO OPTIMIZATION</span><span>•</span><span>WEBSITE REDESIGN</span><span>•</span><span>MAINTENANCE &amp; SUPPORT</span><span>•</span>
+      <span>WEB DEVELOPMENT</span><span>•</span><span>MOBILE APPS</span><span>•</span><span>E-COMMERCE</span><span>•</span><span>SEO OPTIMIZATION</span><span>•</span><span>WEBSITE REDESIGN</span><span>•</span><span>MAINTENANCE &amp; SUPPORT</span><span>•</span>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="section-head reveal">
+      <span class="eyebrow">What I Can Do For You</span>
+      <h2>Services built to <span class="grad">move your business forward</span></h2>
+      <p>From a first website to a full mobile app, everything is crafted to be fast, secure and easy to grow.</p>
+    </div>
+
+    <div class="grid services-grid">
+      <article class="card reveal">
+        <div class="icon">🌐</div>
+        <h3>Website Development</h3>
+        <p>Custom, responsive business websites that convert visitors into paying customers.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">📱</div>
+        <h3>Mobile App Development</h3>
+        <p>Android &amp; iOS apps built for performance and a great user experience.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">🛒</div>
+        <h3>E-Commerce Solutions</h3>
+        <p>Online stores that are secure, fast and easy to manage and scale.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">🎨</div>
+        <h3>Website Redesign</h3>
+        <p>Give your website a fresh, modern look and far better performance.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">📈</div>
+        <h3>SEO &amp; Speed Optimization</h3>
+        <p>Rank higher on Google and enjoy a fast, optimized website.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">🎧</div>
+        <h3>Maintenance &amp; Support</h3>
+        <p>Regular updates, bug fixes and full technical support you can rely on.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Why work with me -->
+  <section class="section why" id="why">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why Work With Me</span>
+      <h2>The difference is in the <span class="grad">details</span></h2>
+    </div>
+    <div class="grid why-grid">
+      <div class="why-item reveal"><span class="why-ico">💬</span><h4>Clear Communication</h4><p>You always know what's happening and what comes next.</p></div>
+      <div class="why-item reveal"><span class="why-ico">⏱️</span><h4>On-Time Delivery</h4><p>Deadlines respected, projects shipped when promised.</p></div>
+      <div class="why-item reveal"><span class="why-ico">✅</span><h4>Quality Work</h4><p>Clean code and pixel-perfect design, every single time.</p></div>
+      <div class="why-item reveal"><span class="why-ico">🏷️</span><h4>Affordable Pricing</h4><p>Premium results at prices that make sense for your business.</p></div>
+      <div class="why-item reveal"><span class="why-ico">📍</span><h4>Local &amp; Reliable</h4><p>Based in Monrovia and always within reach when you need me.</p></div>
+      <div class="why-item reveal"><span class="why-ico">🔒</span><h4>Fast &amp; Secure</h4><p>Optimized, protected builds your customers can trust.</p></div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section" id="work">
+    <div class="section-head reveal">
+      <span class="eyebrow">How We Work</span>
+      <h2>A simple path from <span class="grad">idea to launch</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><span class="step-num">01</span><h4>Discover</h4><p>We talk through your goals, audience and what success looks like.</p></div>
+      <div class="step reveal"><span class="step-num">02</span><h4>Design</h4><p>I craft a modern, on-brand design tailored to your business.</p></div>
+      <div class="step reveal"><span class="step-num">03</span><h4>Build</h4><p>Clean, fast, secure code brings the design to life.</p></div>
+      <div class="step reveal"><span class="step-num">04</span><h4>Launch &amp; Grow</h4><p>We go live, then optimize and support as you grow.</p></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band reveal" id="cta">
+    <div class="cta-inner">
+      <h2>Ready to start your project?</h2>
+      <p>Let's build something amazing together.</p>
+      <div class="cta-actions">
+        <a href="https://wa.me/2310886933223" target="_blank" rel="noopener" class="btn btn-glow">Message Me on WhatsApp</a>
+        <a href="mailto:hello@libdevsolutions.com" class="btn btn-ghost">Email Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="section-head reveal">
+      <span class="eyebrow">Get In Touch</span>
+      <h2>Let's talk about <span class="grad">your idea</span></h2>
+      <p>Send a message and I'll get back to you fast.</p>
+    </div>
+
+    <div class="contact-wrap">
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="field">
+          <input type="text" id="name" name="name" required placeholder=" " />
+          <label for="name">Your Name</label>
+        </div>
+        <div class="field">
+          <input type="email" id="email" name="email" required placeholder=" " />
+          <label for="email">Email Address</label>
+        </div>
+        <div class="field">
+          <input type="text" id="subject" name="subject" placeholder=" " />
+          <label for="subject">Subject</label>
+        </div>
+        <div class="field">
+          <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+          <label for="message">Tell me about your project</label>
+        </div>
+        <button type="submit" class="btn btn-glow btn-block">Send Message <span class="arrow">→</span></button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+
+      <aside class="contact-cards reveal">
+        <a class="contact-card" href="tel:0886933223">
+          <span class="cc-ico">📞</span>
+          <div><strong>Call / WhatsApp</strong><span>0886933223</span></div>
+        </a>
+        <a class="contact-card" href="mailto:hello@libdevsolutions.com">
+          <span class="cc-ico">✉️</span>
+          <div><strong>Email</strong><span>hello@libdevsolutions.com</span></div>
+        </a>
+        <div class="contact-card">
+          <span class="cc-ico">📍</span>
+          <div><strong>Location</strong><span>Monrovia, Liberia</span></div>
+        </div>
+        <div class="socials">
+          <a href="#" aria-label="Facebook" class="soc">f</a>
+          <a href="#" aria-label="Instagram" class="soc">◎</a>
+          <a href="#" aria-label="LinkedIn" class="soc">in</a>
+          <span class="soc-handle">@libdevsolutions</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="#home" class="brand">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span class="brand-text">LIB<span>DEV</span></span>
+      </a>
+      <p class="footer-tag">We Code. <span class="grad">You Grow.</span></p>
+      <p class="footer-copy">© <span id="year"></span> LibDev Solutions · Monrovia, Liberia</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/2310886933223" target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">💬</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
